@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>
+            Tim gia tri nho nhat cua mang
+        </title>
+        <script>
+            function minArray(arr){
+                if(arr.length==0) return -1;
+                min=arr[0];
+                for(var i=1;i<arr.length;i++){
+                    if(min>arr[i]) min=arr[i];
+                }
+                return min;
+            }
+        </script>
+    </head>
+    <body>
+        
+        <script>
+            var arr1=[3,5,1,8,-3,7,8];
+            alert(minArray(arr1));
+            var arr2=[7,12,6,9,20,56,89];
+            alert('min of array 2 is: '+minArray(arr2));
+            var arr3=[];
+            alert(minArray(arr3));
+            var arr4=[0,0,0,0,0,0];
+            alert(minArray(arr4));
+
+        </script>
+    </body>
+</html>

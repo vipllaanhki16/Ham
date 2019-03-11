@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 7</title>
+	<script>
+		function exchange_position(a,b){
+			var c=a;
+			a=b;
+			b=c;
+			var result= 'a = '+a+', b = '+b;
+			return result;
+		}
+	</script>
+</head>
+<body>
+	<script>
+		var a=window.prompt('Enter a: ');
+		var b=window.prompt('Enter b: ');
+		alert(exchange_position(a,b));
+	</script>
+</body>
+</html>

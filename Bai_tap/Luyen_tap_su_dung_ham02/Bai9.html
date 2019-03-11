@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 9</title>
+	<script>
+		function find_times(arr,x){
+			var count=0;
+			for(var i=0;i<=arr.length;i++){
+				if(x==arr[i]) count++;
+			}
+			if(count==0) 
+				return -1;
+			else return count;
+
+		}
+	</script>
+</head>
+<body>
+	<script>
+		var arr=['s','c','k','l','s'];
+		var x=window.prompt('Enter x: ');
+		alert(find_times(arr,x));
+	</script>
+</body>
+</html>

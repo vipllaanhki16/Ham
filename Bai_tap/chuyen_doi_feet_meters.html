@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Chuyen doi feet meters
+        </title>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <form >
+            <h1> Converter feet to meters - meters to feet</h1>
+            <label>Feet :</label>
+            <input id="inputFeet" type="number" placeholder="Feet" oninput="convertFeet(this.value)" onchange="convertFeet(this.value)">
+            <p>Meters: <span id="outputMeters"></span></p>
+            <br/>
+            <label >Meters :</label>
+            <input type="number" id='inputMeters' placeholder="Meters" oninput="convertMeters(this.value)" onchange="convertMeters(this.value)">
+            <p>Feet: <span id='outputFeet'></span></p>
+
+        </form>
+
+        <script>
+            function convertFeet(valNum){
+                valNum=parseFloat(valNum);
+                document.getElementById("outputMeters").innerHTML=valNum*0.305;
+            }
+            function convertMeters(valNum){
+                valNum=parseFloat(valNum);
+                document.getElementById("outputFeet").innerHTML=valNum*3.279;
+            }
+        </script>
+    </body>
+</html>

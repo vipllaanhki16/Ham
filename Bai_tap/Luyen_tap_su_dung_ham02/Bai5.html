@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 5</title>
+	<script>
+		function min(a,b,c){
+			var min=a;
+			if(b<a) {
+				min=b;
+				if(c<b) min=c;
+			}
+			else if(c<a) min=c;
+			return min;
+
+
+		}
+	</script>
+</head>
+<body>
+	<script>
+		var a=window.prompt('Enter a: ');
+		var b=window.prompt('Enter b: ');
+		var c=window.prompt('Enter c: ');
+		alert('min of '+a+','+b+','+c+' is: '+min(a,b,c));
+	</script>
+</body>
+</html>

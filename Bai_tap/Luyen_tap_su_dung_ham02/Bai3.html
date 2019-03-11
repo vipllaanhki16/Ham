@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 3</title>
+	<script>
+		function giai_thua(x){
+			var result=1;
+			for (var i=1;i<=x;i++){
+				result *= i;
+			}
+			return result;
+		}
+	</script>
+</head>
+<body>
+	<script>
+		var x=window.prompt('Enter the number: ');
+		alert(x+'! = '+giai_thua(x));
+	</script>
+</body>
+</html>

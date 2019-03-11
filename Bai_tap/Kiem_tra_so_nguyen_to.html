@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Kiểm tra số nguyên tố
+        </title>
+        <script>
+            function so_nt(){
+                var count=0;
+                var x= arguments[0];
+                if(x==1) return -1;
+                var result='';
+                for(var i=1;i<x/2;i++){
+                    if(x%i==0) count++;
+                }
+                if(count==1) result=x+' la so nguyen to'; 
+                else result=x+' khong phai la so nguyen to';
+                return result;
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            var x=window.prompt('Enter the number');
+            alert(so_nt(x));
+        </script>
+    </body>
+</html>

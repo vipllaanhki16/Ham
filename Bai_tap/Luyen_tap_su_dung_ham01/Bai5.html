@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bai 5
+        </title>
+        <script>
+            var arr1=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+            var arr2=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+            function star(x) {
+                var result=''
+                for(var i=0;i<arr1.length;i++){
+                    if(x==arr1[i]){
+                        result=arr2[i];
+                        break;
+                    }
+                    else result="Can't find your Star!!";
+                }
+                return result;
+}
+        </script>
+    </head>
+    <body>
+        <script>
+            var x=prompt('Enter the name of Star: ');
+            alert(star(x));
+        </script>
+        
+    </body>
+</html>
